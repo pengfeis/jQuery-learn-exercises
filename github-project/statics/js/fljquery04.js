@@ -18,5 +18,6 @@ $(function() {
 			v_show.animate({left: "-="+v_width}, "slow");
 			page++;
 		}
+		parent.find("span").eq((page - 1)).addClass("current").siblings().removeClass("current");
 	});
 });
